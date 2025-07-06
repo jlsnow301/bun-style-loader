@@ -24,7 +24,7 @@ export default function styleLoader(
 	return {
 		name: "style-loader",
 		async setup(build) {
-			const [sass, fs] = await Promise.all([import("sass"), import("fs")]);
+			const [sass, fs] = await Promise.all([import("sass"), import("node:fs")]);
 
 			build.onLoad({ filter: /\.css$/ }, (args) => {
 				const contents = fs.readFileSync(args.path, "utf8");
