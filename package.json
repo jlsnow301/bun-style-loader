@@ -18,9 +18,9 @@
 			"url": "https://github.com/jlsnow301"
 		}
 	],
-	"repository": "https://github.com/jlsnow301/bun-style-loader",
-	"homepage": "https://github.com/jlsnow301/bun-style-loader",
-	"bugs": "https://github.com/jlsnow301/bun-style-loader/issues",
+	"repository": "https://github.com/jlsnow301/bun-styleloader-fork",
+	"homepage": "https://github.com/jlsnow301/bun-styleloader-fork",
+	"bugs": "https://github.com/jlsnow301/bun-styleloader-fork/issues",
 	"license": "MIT",
 	"files": [
 		"src",

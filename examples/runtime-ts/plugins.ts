@@ -1,5 +1,5 @@
 import { plugin } from "bun";
-import styleLoader from "bun-style-loader";
+import styleLoader from "bun-styleloader-fork";
 
 await plugin(
 	styleLoader({

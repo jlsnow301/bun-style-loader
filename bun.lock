@@ -2,7 +2,7 @@
   "lockfileVersion": 1,
   "workspaces": {
     "": {
-      "name": "bun-style-loader",
+      "name": "bun-styleloader-fork",
       "dependencies": {
         "lightningcss-wasm": "^1.30.1",
       },
