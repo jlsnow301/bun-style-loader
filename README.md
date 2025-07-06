@@ -4,6 +4,7 @@ A fork of https://github.com/taggon/bun-style-loader, which seems to be abandone
 
 Changes I've made: Sass now uses `NodePackageImporter` to resolve imports.
 Implemented https://github.com/taggon/bun-style-loader/pull/6
+Implemented biome/prettier
 
 Bun plugin to allow loading css, sass files, and css modules
 
@@ -33,7 +34,7 @@ Bun.build({
 Now, you can import CSS, SASS files, and CSS modules in your code:
 
 ```js
-import styles from './styles.css';
+import styles from "./styles.css";
 
 console.log(styles); // string of the css file
 ```
@@ -46,8 +47,8 @@ To incorporate the `bun-style-loader` at runtime, follow these steps. Assume you
 
 ```js
 // preload.ts
-import { plugin } from 'bun';
-import styleLoader from 'bun-style-loader';
+import { plugin } from "bun";
+import styleLoader from "bun-style-loader";
 
 await plugin(styleLoader(/* options here */));
 ```
@@ -112,8 +113,8 @@ The plugin does NOT automatically insert the CSS into the DOM. Instead, it provi
 Example for plain CSS:
 
 ```js
-import { insertStyleElement } from 'bun-style-loader/utils';
-import styles from './styles.css';
+import { insertStyleElement } from "bun-style-loader/utils";
+import styles from "./styles.css";
 
 insertStyleElement(styles);
 ```
@@ -129,8 +130,8 @@ Example for CSS modules:
 
 ```js
 // app.js
-import { insertStyleElement } from 'bun-style-loader/utils';
-import styles, { code } from './styles.module.css';
+import { insertStyleElement } from "bun-style-loader/utils";
+import styles, { code } from "./styles.module.css";
 
 insertStyleElement(styles, code);
 
@@ -148,7 +149,7 @@ You may need to add a custom type declaration.
 For CSS modules:
 
 ```typescript
-declare module '*.module.css' {
+declare module "*.module.css" {
   const content: Record<string, string>;
   export default content;
   export const code: string;
@@ -158,7 +159,7 @@ declare module '*.module.css' {
 For plain CSS files:
 
 ```typescript
-declare module '*.css' {
+declare module "*.css" {
   const content: string;
   export default content;
 }

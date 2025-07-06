@@ -1,53 +1,58 @@
 {
-  "name": "bun-style-loader",
-  "description": "Bun plugin to allow loading css, sass files, and css modules",
-  "version": "0.4.0",
-  "type": "module",
-  "module": "src/index.ts",
-  "types": "types/index.d.ts",
-  "author": {
-    "name": "Taegon Kim",
-    "email": "gonom9@gmail.com",
-    "url": "https://taegon.kim"
-  },
-  "repository": "https://github.com/taggon/bun-style-loader",
-  "homepage": "https://github.com/taggon/bun-style-loader",
-  "bugs": "https://github.com/taggon/bun-style-loader/issues",
-  "license": "MIT",
-  "files": [
-    "src",
-    "types"
-  ],
-  "keywords": [
-    "bun",
-    "plugin",
-    "style",
-    "loader",
-    "css",
-    "sass",
-    "scss"
-  ],
-  "exports": {
-    ".": {
-      "bun": "./src/index.ts",
-      "types": "./types/index.d.ts"
-    },
-    "./utils": {
-      "bun": "./src/utils.ts",
-      "types": "./types/utils.d.ts"
-    }
-  },
-  "scripts": {
-    "prepare": "rm -rf types && tsc -p tsconfig.build.json"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": ">= 5.0.0",
-    "sass": ">= 1.0.0"
-  },
-  "dependencies": {
-    "lightningcss-wasm": "^1.22.1"
-  }
+	"name": "bun-style-loader",
+	"description": "Bun plugin to allow loading css, sass files, and css modules",
+	"version": "0.5.0",
+	"type": "module",
+	"module": "src/index.ts",
+	"types": "types/index.d.ts",
+	"packageManager": "bun@1.2.18",
+	"author": {
+		"name": "Taegon Kim",
+		"email": "gonom9@gmail.com",
+		"url": "https://taegon.kim"
+	},
+	"repository": "https://github.com/taggon/bun-style-loader",
+	"homepage": "https://github.com/taggon/bun-style-loader",
+	"bugs": "https://github.com/taggon/bun-style-loader/issues",
+	"license": "MIT",
+	"files": [
+		"src",
+		"types"
+	],
+	"keywords": [
+		"bun",
+		"plugin",
+		"style",
+		"loader",
+		"css",
+		"sass",
+		"scss"
+	],
+	"exports": {
+		".": {
+			"bun": "./src/index.ts",
+			"types": "./types/index.d.ts"
+		},
+		"./utils": {
+			"bun": "./src/utils.ts",
+			"types": "./types/utils.d.ts"
+		}
+	},
+	"scripts": {
+		"prepare": "rm -rf types && tsc -p tsconfig.build.json",
+		"lint": "biome check .",
+		"lint:fix": "biome check . --write"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
+		"bun-types": "latest",
+		"prettier": "^3.6.2"
+	},
+	"peerDependencies": {
+		"typescript": ">= 5.0.0",
+		"sass": ">= 1.0.0"
+	},
+	"dependencies": {
+		"lightningcss-wasm": "^1.22.1"
+	}
 }
