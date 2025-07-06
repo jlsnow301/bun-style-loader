@@ -1,7 +1,7 @@
 {
 	"name": "bun-styleloader-fork",
 	"description": "Bun plugin to allow loading css, sass files, and css modules",
-	"version": "0.5.2",
+	"version": "0.5.3",
 	"type": "module",
 	"module": "src/index.ts",
 	"types": "types/index.d.ts",
