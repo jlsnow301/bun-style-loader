@@ -1,19 +1,26 @@
 {
-	"name": "bun-style-loader",
+	"name": "bun-styleloader",
 	"description": "Bun plugin to allow loading css, sass files, and css modules",
 	"version": "0.5.0",
 	"type": "module",
 	"module": "src/index.ts",
 	"types": "types/index.d.ts",
 	"packageManager": "bun@1.2.18",
-	"author": {
-		"name": "Taegon Kim",
-		"email": "gonom9@gmail.com",
-		"url": "https://taegon.kim"
-	},
-	"repository": "https://github.com/taggon/bun-style-loader",
-	"homepage": "https://github.com/taggon/bun-style-loader",
-	"bugs": "https://github.com/taggon/bun-style-loader/issues",
+	"authors": [
+		{
+			"name": "Taegon Kim",
+			"email": "gonom9@gmail.com",
+			"url": "https://taegon.kim"
+		},
+		{
+			"name": "Jeremiah Snow",
+			"email": "jlsnow301@pm.me",
+			"url": "https://github.com/jlsnow301"
+		}
+	],
+	"repository": "https://github.com/jlsnow301/bun-style-loader",
+	"homepage": "https://github.com/jlsnow301/bun-style-loader",
+	"bugs": "https://github.com/jlsnow301/bun-style-loader/issues",
 	"license": "MIT",
 	"files": [
 		"src",
@@ -39,7 +46,7 @@
 		}
 	},
 	"scripts": {
-		"prepare": "rm -rf types && tsc -p tsconfig.build.json",
+		"prepare": "bun prepare.ts && tsc -p tsconfig.build.json",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write"
 	},
