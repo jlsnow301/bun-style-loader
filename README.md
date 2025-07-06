@@ -1,27 +1,28 @@
-# Bun Style Loader
+# Bun StyleLoader: Forked
 
 A fork of https://github.com/taggon/bun-style-loader, which seems to be abandoned.
 
 Changes I've made:
-* Sass now uses `NodePackageImporter` to resolve imports.
-* Implemented https://github.com/taggon/bun-style-loader/pull/6
-* Implemented biome/prettier
+
+- Sass now uses `NodePackageImporter` to resolve imports.
+- Implemented https://github.com/taggon/bun-style-loader/pull/6
+- Implemented biome/prettier
 
 Bun plugin to allow loading css, sass files, and css modules
 
 ## Usage
 
-To get begin, install the `bun-style-loader` package using the following commands:
+To get begin, install the `bun-styleloader-fork` package using the following commands:
 
 ```shell
-npm install --save-dev bun-style-loader
+npm install --save-dev bun-styleloader-fork
 npm install --save-dev sass # Required for compiling Sass (only when needed)
 ```
 
 Next, add the plugin to your build script:
 
 ```js
-import styleLoader from 'bun-style-loader';
+import styleLoader from 'bun-styleloader-fork';
 
 Bun.build({
   ...
