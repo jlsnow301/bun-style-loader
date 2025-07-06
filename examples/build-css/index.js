@@ -1,3 +1,3 @@
-import styles from './style.css';
+import styles from "./style.css";
 
-console.dir('Styles loaded:\n' + styles);
+console.dir("Styles loaded:\n" + styles);

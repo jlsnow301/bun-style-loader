@@ -1,3 +1,3 @@
-import styles from './style.css';
+import styles from "./style.css";
 
-console.log('Styles loaded:', { styles });
+console.log("Styles loaded:", { styles });

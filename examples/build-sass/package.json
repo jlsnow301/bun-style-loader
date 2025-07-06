@@ -1,14 +1,14 @@
 {
-  "name": "build-sass",
-  "module": "index.js",
-  "type": "module",
-  "scripts": {
-    "build": "bun run ./build.js"
-  },
-  "dependencies": {
-    "bun-style-loader": "file:../../"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  }
+	"name": "build-sass",
+	"module": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "bun run ./build.js"
+	},
+	"dependencies": {
+		"bun-style-loader": "file:../../"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	}
 }

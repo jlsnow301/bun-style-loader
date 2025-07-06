@@ -1,15 +1,15 @@
 {
-  "name": "build-css",
-  "module": "index.js",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "bun run ./build.js"
-  },
-  "dependencies": {
-    "bun-style-loader": "file:../../"
-  },
-  "devDependencies": {
-    "bun-types": "latest"
-  }
+	"name": "build-css",
+	"module": "index.js",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"build": "bun run ./build.js"
+	},
+	"dependencies": {
+		"bun-style-loader": "file:../../"
+	},
+	"devDependencies": {
+		"bun-types": "latest"
+	}
 }
