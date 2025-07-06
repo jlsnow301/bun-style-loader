@@ -1,5 +1,10 @@
 # Bun Style Loader
 
+A fork of https://github.com/taggon/bun-style-loader, which seems to be abandoned.
+
+Changes I've made: Sass now uses `NodePackageImporter` to resolve imports.
+Implemented https://github.com/taggon/bun-style-loader/pull/6
+
 Bun plugin to allow loading css, sass files, and css modules
 
 ## Usage
